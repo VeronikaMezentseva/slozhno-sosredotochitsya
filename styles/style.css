@@ -2,4 +2,120 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font);
+  font-size: 18px;
+  color: var(--text-color);
+  background-image: url('../images/cover-image-dark.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr minmax(min-content, max-content);
+}
+
+.container {
+  padding: 20px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  display: inline-block;
+  right: 20px;
+}
+
+.decorated-zone__element {
+  position: absolute;
+  right: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 3px;
+  line-height: 138.889%;
+  color: var(--accent-color);
+}
+
+.decorated-zone__element::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 100px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px var(--accent-color);
+  right: -20px;
+}
+
+.header__theme-menu {
+  
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 1.5px 13px;
+  text-transform: lowercase;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_dark {
+
+}
+
+.header__hiro-title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  font-weight: 700;
+  line-height: 82.5%;
+  color: var(--accent-text-color);
+  margin-bottom: 114px;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.header__hiro-paragraph {
+  justify-self: end;
+  align-self: end;
+  color: var(--bg-color);
+  font-weight: 700;
+  line-height: 130%;
+  background-color: var(--accent-color);
+  width: min(100%, 491px);
+  height: min(100%, 117px);
 }
