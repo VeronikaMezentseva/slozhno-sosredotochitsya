@@ -26,14 +26,6 @@
   display: none;
 }
 
-.theme_light .decorated-zone::after {
-  display: none;
-}
-
-.theme_light .decorated-zone::before {
-  display: none;
-}
-
 .theme_light .header__hiro-title {
   color: var(--title-color);
 }

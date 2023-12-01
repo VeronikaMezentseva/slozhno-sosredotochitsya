@@ -15,7 +15,7 @@
   display: grid;
   height: 100vh;
   grid-template-rows: 310px min-content 310px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .container {
@@ -35,8 +35,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-title-color);
+  border-right: 1px solid var(--accent-title-color);
   display: inline-block;
   right: 20px;
   top: 20px;
@@ -47,8 +47,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-title-color);
+  border-left: 1px solid var(--accent-title-color);
   display: inline-block;
   left: 20px;
   bottom: 40px; /*20px*/
