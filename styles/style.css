@@ -10,6 +10,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  margin-block-end: 20px;
 }
 
 .header {
@@ -150,6 +151,10 @@
     padding: 10px;
   }
 
+  .page {
+    margin-block-end: 10px;
+  }
+
   .header {
     margin-block-end: 30px;
   }
@@ -201,6 +206,10 @@
 }
 
 @media (width < 768px) {
+
+  .main {
+    margin-block-end: 30px;
+  }
 
   .main__row-container {
     display: grid;
