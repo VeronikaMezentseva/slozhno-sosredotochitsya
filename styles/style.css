@@ -251,6 +251,10 @@
   .main__column-container {
     grid-template-columns: 1fr;
   }
+  
+  .main__text-container {
+    padding-left: 6px;
+  }
 }
 
 @media (width < 768px) {
