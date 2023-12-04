@@ -15,6 +15,6 @@
   --main-text-color: #F1B2CE;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
-  --main-font: 'IBM Plex mono', 'sans-serif';
+  --main-font: 'IBM Plex mono';
   --transparent-accent-color: rgba(255, 0, 112, 0.40);
 }
