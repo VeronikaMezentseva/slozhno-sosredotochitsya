@@ -14,6 +14,7 @@
   --title-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --main-font: 'IBM Plex mono', 'sans-serif';
+  --transparent-accent-color: rgba(50, 49, 45, 0.40);
 }
 
 .page.theme_light {
@@ -22,6 +23,10 @@
 
 .theme_light .decorated-zone__element {
   display: none;
+}
+
+.theme_light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .theme_light .decorated-zone::before {
@@ -69,7 +74,8 @@
         --main-text-color: #353430;
         --title-color: #FFC2E6;
         --accent-color: #FF8DCB;
-        --main-font: 'IBM Plex mono', 'sans-serif';   
+        --main-font: 'IBM Plex mono', 'sans-serif';  
+        --transparent-accent-color: rgba(50, 49, 45, 0.40); 
     }
     .page.theme_auto {
       background-image: url('../images/cover-image-light.png');
@@ -77,6 +83,10 @@
     
     .theme_auto .decorated-zone__element {
       display: none;
+    }
+
+    .theme_auto .header__theme-menu-button:focus-visible {
+      border-bottom: 1px solid var(--main-text-color);
     }
     
     .theme_auto .decorated-zone::before {
