@@ -14,7 +14,7 @@
 }
 
 a:hover {
-  border-bottom: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
 }
 
 a:focus {
@@ -34,7 +34,7 @@ a:focus-visible {
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
 }
 
 .header {
@@ -46,10 +46,6 @@ a:focus-visible {
 
 .container {
   padding: 20px;
-}
-
-.header__theme-menu-button {
-  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -120,6 +116,7 @@ a:focus-visible {
   color: var(--accent-color);
   text-transform: lowercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {

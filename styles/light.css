@@ -15,9 +15,6 @@
   --accent-color: #FF8DCB;
   --main-font: 'IBM Plex mono', 'sans-serif';
   --transparent-accent-color: rgba(50, 49, 45, 0.40);
-}
-
-.page.theme_light {
   background-image: url('../images/cover-image-light.png');
 }
 
@@ -26,17 +23,17 @@
 }
 
 .theme_light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
 }
 
 .theme_light .decorated-zone::before {
-  border-top: 1px solid var(--main-text-color);
-  border-right: 1px solid var(--main-text-color);
+  border-block-start: 1px solid var(--main-text-color);
+  border-inline-end: 1px solid var(--main-text-color);
 }
 
 .theme_light .decorated-zone::after {
-  border-bottom: 1px solid var(--main-text-color);
-  border-left: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
+  border-inline-start: 1px solid var(--main-text-color);
 }
 
 .theme_light .header__theme-menu-button {
@@ -68,6 +65,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
         /* Дублируем переменные светлой темы */ 
         --bg-color: #353430;
@@ -77,6 +75,7 @@
         --main-font: 'IBM Plex mono', 'sans-serif';  
         --transparent-accent-color: rgba(50, 49, 45, 0.40); 
     }
+    
     .page.theme_auto {
       background-image: url('../images/cover-image-light.png');
     }
@@ -86,17 +85,17 @@
     }
 
     .theme_auto .header__theme-menu-button:focus-visible {
-      border-bottom: 1px solid var(--main-text-color);
+      border-block-end: 1px solid var(--main-text-color);
     }
     
     .theme_auto .decorated-zone::before {
-      border-top: 1px solid var(--main-text-color);
-      border-right: 1px solid var(--main-text-color);
+      border-block-start: 1px solid var(--main-text-color);
+      border-inline-end: 1px solid var(--main-text-color);
     }
     
     .theme_auto .decorated-zone::after {
-      border-bottom: 1px solid var(--main-text-color);
-      border-left: 1px solid var(--main-text-color);
+      border-block-end: 1px solid var(--main-text-color);
+      border-inline-start: 1px solid var(--main-text-color);
     }
     
     .theme_auto .header__theme-menu-button {
