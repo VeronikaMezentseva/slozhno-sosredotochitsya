@@ -411,6 +411,10 @@ a:focus-visible {
     margin-block-end: 30px;
   }
 
+  .header__hiro-title {
+    margin-inline-start: 0;
+  }
+
   .decorated-zone__element {
     top: 10px;
     right: 38px;
